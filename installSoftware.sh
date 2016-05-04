@@ -10,4 +10,4 @@ export LC_ALL=C && \
 nginx -v && \
 git --version && \
 mongo --version && \
-node --version && \
+node --version
