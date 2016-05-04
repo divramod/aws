@@ -1,3 +1,4 @@
+# run it via: wget -O - https://raw.githubusercontent.com/divramod/aws/master/installSoftware.sh | bash
 # packages
 sudo apt-get update
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
@@ -18,4 +19,12 @@ sudo apt-get install -y nodejs
 # mongodb
 # https://docs.mongodb.org/v3.0/tutorial/install-mongodb-on-ubuntu/
 sudo apt-get install -y mongodb-org
+# http://stackoverflow.com/questions/27375137/failed-global-initialization-badvalue-invalid-or-no-user-locale-set-please-ens
+export LC_ALL=C
 sudo service mongod start
+
+# versions
+nginx -v
+git --version
+mongo --version
+node --version
